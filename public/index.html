@@ -101,11 +101,11 @@
 
     <script type="module">
       /* use Preact so we don’t need to set up bundlers */
-      import { h, render } from 'https://unpkg.com/preact@latest?module';
-      import { useState } from 'https://unpkg.com/preact@latest/hooks/dist/hooks.module.js?module';
-      import htm from 'https://unpkg.com/htm?module';
-
-      const html = htm.bind(h);
+      import {
+        html,
+        render,
+        useState,
+      } from 'https://unpkg.com/htm/preact/standalone.module.js';
 
       function Corgi({ corgi }) {
         const [boops, setBoops] = useState(corgi.boops);
